@@ -147,22 +147,22 @@ a {
 
 .intro__head {
   text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
   line-height: 1.5;
   gap: 5px;
 }
 
 
 .intro__title {
-  font-size: var(--step-5);
+  font-size: var(--step-3);
   display: block;
   font-family: $titleFont;
 }
 
 
 .intro__subtitle {
-  font-size: var(--step-1);
+  font-size: var(--step-0);
   display: block;
   font-family: $bodyFont;
 }
