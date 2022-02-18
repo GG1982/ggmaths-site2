@@ -271,6 +271,10 @@ a {
 .media-element p:first-of-type {
   font-style: italic;
   opacity: 0.85;
+  width: var(--mw);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .media-element h2 {
