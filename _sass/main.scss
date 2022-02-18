@@ -1,0 +1,446 @@
+$backgroundColor: #f5f5ef;
+$bodyColor: #1d2022;
+$clr-accent: #272f47;
+$clr-A: #6C63FF;
+$clr-B: #F36A3E;
+$clr-C: #FFB30B;
+
+$bodyFont: 'DM Sans', sans-serif;
+$titleFont: 'Poppins', sans-serif;
+
+:root {
+  --step--2: clamp(0.91rem, 0.65rem + 0.59vw, 1.04rem);
+  --step--1: clamp(0.98rem, 0.67rem + 0.79vw, 1.30rem);
+  --step-0: clamp(1.1rem, 0.79rem + 1.06vw, 1.63rem);
+  --step-1: clamp(1.20rem, 0.92rem + 1.41vw, 2.03rem);
+  --step-2: clamp(1.44rem, 1.07rem + 1.87vw, 3rem);
+  --step-3: clamp(1.73rem, 1.24rem + 2.46vw, 3.17rem);
+  --step-4: clamp(2.07rem, 1.43rem + 3.22vw, 3.97rem);
+  --step-5: clamp(2.49rem, 1.65rem + 4.21vw, 4.96rem);
+
+  --section-gap: 20rem;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+      0.125em 0.125em 0.35em rgba(0, 0, 0, 0.15);
+
+  --br: 1rem;
+
+  --mw: 75%;
+
+  --gap-1: 1rem;
+  --gap-2: 2rem;
+  --gap-3: 3rem;
+  --gap-4: 4rem;
+  --gap-5: 5rem;
+
+}
+
+
+body {
+  background-color: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  overflow-x: hidden;
+}
+
+section {
+  margin-bottom: var(--section-gap);
+}
+
+.svg {
+  padding: 3rem 1.5rem;
+  filter: brightness(0.9);
+}
+
+p {
+  font-size: var(--step--2);
+  line-height: 1.8;
+  
+}
+a {
+  font-size: 1rem;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-inline: auto;
+  padding-inline: 2rem;
+  max-width: 100em;
+  gap: var(--gap-3);
+}
+
+
+.title {
+  font-size: var(--step-2);
+  font-weight: bold;
+  font-family: $titleFont;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  margin-bottom: -0.2rem;
+  font-size: var(--step--2);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.subtitle span {
+  color: $clr-B;
+}
+
+
+.body-width {
+  max-width: var(--mw);
+  margin: 0 auto;
+}
+
+.button {
+  width: fit-content;
+  background-color: $clr-A;
+  color: $backgroundColor;
+  padding: 0.8rem 1.6rem;
+  box-shadow: var(--bs);
+  border-radius: var(--br);
+  font-size: var(--step--1);
+
+  text-decoration: none;
+  text-transform: capitalize;
+
+   transition: 200ms;
+
+}
+
+
+// For larger monitors
+@media screen and (min-width: 2000px) {
+
+  .grid-parent {
+    max-width: 70%;
+  }
+  
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:var(--gap-3)
+}
+
+
+// Introduction Section
+.intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  min-height: 85vh;
+  padding-top: 2em;
+  background-image: url("/assets/images/wave\ \(9\).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10rem;
+}
+
+.intro__head {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.5;
+  gap: 5px;
+}
+
+
+.intro__title {
+  font-size: var(--step-5);
+  display: block;
+  font-family: $titleFont;
+}
+
+
+.intro__subtitle {
+  font-size: var(--step-1);
+  display: block;
+  font-family: $bodyFont;
+}
+
+// Hero Section
+
+
+// About Me
+.about-me {
+  grid-template-areas: "img body body";
+}
+
+.about-me__body {
+  grid-area: body;
+}
+
+.about-me__img {
+  grid-area: img;
+}
+
+.about-me__img img {
+  box-shadow: var(--bs);
+  border-radius: var(--br);
+}
+
+
+
+
+// Private Tutor Section 
+
+
+
+
+// Pro Tutoring Section 
+
+.pro-tutoring__body h2 {
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+
+
+
+
+// Testimonials Section
+.testimonials {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.media-scroller {
+  --_spacer: 1rem;
+  border-radius: var(--br);
+
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 44%;
+
+  padding: 3rem var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+
+.media-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--_spacer);
+
+  padding: 2rem var(--_spacer);
+
+  background-color: #fff;
+  color: $bodyColor;
+
+  border-radius: var(--br);
+  box-shadow: var(--bs);
+
+  border-top: 5px solid $clr-A;
+
+  position: relative;
+
+}
+
+.media-element::after {
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: $clr-A;
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  position: absolute;
+  width: 5rem;
+  top: -2rem;
+  // transform: rotate(180deg);
+}
+
+.media-element p:first-of-type {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.media-element h2 {
+  font-weight: bold;
+  text-align: center;
+}
+.stars {
+  font-size: 1.1rem;
+  // display: none;
+  text-align: center;
+}
+
+.media-element p span {
+  color: $clr-B;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+
+
+.testimonials__btn {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+
+// FAQ
+.faq-question {
+  font-size: var(--step--2);
+  margin-bottom: 0.3rem;
+  text-transform: capitalize;
+}
+
+.faq-question,
+.faq-answer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-answer {
+  padding-left: 2em;
+}
+
+.faq-question-style {
+  color: $clr-B;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.faq-answer-style {
+  color: $clr-A;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+
+// Footer Section
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+  min-height: 75vh;
+  background-image: url("/assets/images/wave\ \(10\).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  transition: 200ms;
+  font-size: var(--step--1);
+  color: $bodyColor;
+}
+
+
+
+.footer-address span {
+  display: block;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  :root {--gap: 8em }
+
+
+  section {
+    margin-bottom: var(--gap);
+  }
+  
+  .grid-parent {
+    display: flex;
+    flex-direction: column; 
+    gap: var(--gap-3);
+    padding: 1rem;
+  }
+
+  .body-width {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .intro {
+    padding-top: 7rem;
+    padding-left: 0;
+    min-height: 70vh;
+    margin-bottom: 5rem;
+
+  }
+
+  .intro__head {
+    padding-left: 1rem ;
+    padding-right: 1rem;
+    gap: 5px;
+  }
+
+  .intro__img {
+    margin-top: -1rem;
+  }
+
+  .hero__img {
+    min-height: 300px;
+  }
+
+
+  .private-tutor,
+  .faq {
+    flex-direction: column-reverse;
+  }
+
+
+  .media-scroller {
+    grid-auto-columns: 86%;
+  }
+
+  .footer .grid-parent {
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+
+  
+.testimonials__btn {
+  text-align: left;
+}
+}
+
+
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: hsl(243, 100%, 60%); // clr-A 60%;
+  }
+
+  .footer-links a:hover {
+    color: $clr-B;
+  }
+}

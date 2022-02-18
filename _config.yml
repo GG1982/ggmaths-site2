@@ -1,0 +1,11 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: Giuliano Grasso # the name of your site, e.g. ACME Corp.
+email: giuliano.grasso26@gmail.com
+author: Giuliano Grasso
+description: private maths tutor for 11+, GCSE and A-Level.
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
