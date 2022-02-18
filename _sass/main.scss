@@ -9,8 +9,8 @@ $bodyFont: 'DM Sans', sans-serif;
 $titleFont: 'Poppins', sans-serif;
 
 :root {
-  --step--2: clamp(0.91rem, 0.65rem + 0.59vw, 1.04rem);
-  --step--1: clamp(0.98rem, 0.67rem + 0.79vw, 1.30rem);
+  --step--2: clamp(0.98rem, 0.65rem + 0.59vw, 1.04rem);
+  --step--1: clamp(1.02rem, 0.67rem + 0.79vw, 1.30rem);
   --step-0: clamp(1.1rem, 0.79rem + 1.06vw, 1.63rem);
   --step-1: clamp(1.20rem, 0.92rem + 1.41vw, 2.03rem);
   --step-2: clamp(1.44rem, 1.07rem + 1.87vw, 3rem);
@@ -398,8 +398,6 @@ a {
   }
 
   .intro__head {
-    padding-left: 1rem ;
-    padding-right: 1rem;
     gap: 5px;
   }
 
