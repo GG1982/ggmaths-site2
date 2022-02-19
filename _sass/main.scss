@@ -111,7 +111,7 @@ a {
   text-decoration: none;
   text-transform: capitalize;
 
-   transition: 200ms;
+  transition: 200ms;
 
 }
 
@@ -137,12 +137,12 @@ a {
 .intro {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-  min-height: 85vh;
+  // min-height: 85vh;
   padding-top: 2em;
   background-image: url(../../assets/images/header-wave.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 10rem;
+  margin-bottom: 0rem;
 }
 
 .intro__head {
@@ -404,7 +404,7 @@ a {
     padding-top: 7rem;
     padding-left: 0;
     min-height: 70vh;
-    margin-bottom: 5rem;
+    margin-bottom: 0rem;
 
   }
 
