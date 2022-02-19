@@ -210,7 +210,7 @@ a {
 
 // Testimonials Section
 .testimonials {
-  max-width: 90rem;
+  max-width: var(--width-gap);
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
