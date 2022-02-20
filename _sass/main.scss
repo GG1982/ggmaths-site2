@@ -440,9 +440,22 @@ a {
   }
 
   
-.testimonials__btn {
-  text-align: left;
-}
+  .testimonials__btn {
+    text-align: left;
+  }
+
+
+  .media-scroller {
+    padding: 2rem 0;
+  }
+
+
+  .media-element {
+    padding: 2rem 0;
+  }
+  .media-element p:first-of-type {
+    width: 87%;
+  }
 }
 
 
