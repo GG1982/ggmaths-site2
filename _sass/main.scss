@@ -380,7 +380,7 @@ a {
 
   :root {--gap: 5em }
 
-
+  // Global
   section {
     margin-bottom: var(--gap);
   }
@@ -411,6 +411,8 @@ a {
 
   }
 
+
+  // Intro
   .intro__head {
     gap: 5px;
   }
@@ -419,42 +421,45 @@ a {
     margin-top: -1rem;
   }
 
+  
+  // Hero
   .hero__img {
     min-height: 300px;
   }
 
 
+  // Body
   .private-tutor,
   .faq {
     flex-direction: column-reverse;
   }
 
 
-  .media-scroller {
-    grid-auto-columns: 94%;
+  // Testimonials
+  .testimonials {
+    padding: 0 0.2rem;
   }
-
-  .footer .grid-parent {
-    margin-right: auto;
-    margin-left: 1rem;
-  }
-
   
   .testimonials__btn {
     text-align: left;
   }
 
-
   .media-scroller {
+    grid-auto-columns: 92%;
     padding: 2rem 0;
   }
-
-
   .media-element {
     padding: 2rem 0;
   }
   .media-element p:first-of-type {
     width: 87%;
+  }
+
+
+  // Footer
+  .footer .grid-parent {
+    margin-right: auto;
+    margin-left: 1rem;
   }
 }
 
