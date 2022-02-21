@@ -370,7 +370,6 @@ a {
 
 .footer-links a {
   text-decoration: none;
-  font-weight: bold;
   transition: 200ms;
   font-size: var(--step--1);
   color: $bodyColor;
@@ -477,6 +476,10 @@ a {
   .footer .grid-parent {
     margin-right: auto;
     margin-left: 1rem;
+  }
+
+  .footer-links a {
+    font-weight: bold;
   }
 }
 
