@@ -53,6 +53,10 @@ section {
   margin-bottom: var(--section-gap);
 }
 
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
 .svg {
   padding: 3rem 1.5rem;
   filter: brightness(0.9);
@@ -267,7 +271,6 @@ a {
   position: absolute;
   width: 5rem;
   top: -2rem;
-  // transform: rotate(180deg);
 }
 
 .media-element p:first-of-type {
@@ -302,12 +305,21 @@ a {
   scroll-snap-align: start;
 }
 
-
-
 .testimonials__btn {
   margin-top: 4rem;
   text-align: center;
 }
+
+
+.swipe {
+  display: none;
+  text-align: center;
+  color: $clr-A;
+  font-weight: bold;
+}
+
+
+
 
 
 // FAQ
@@ -421,7 +433,7 @@ a {
     margin-top: -1rem;
   }
 
-  
+
   // Hero
   .hero__img {
     min-height: 300px;
@@ -452,8 +464,13 @@ a {
     padding: 2rem 0;
   }
   .media-element p:first-of-type {
-    width: 87%;
+    width: 85%;
   }
+
+  .swipe {
+    display: block;
+  }
+
 
 
   // Footer
