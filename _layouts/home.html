@@ -4,22 +4,20 @@ layout: default
 
 
 
+
 <!-- Introduction -->
 <section class="intro">
     <header class="intro__head flex-center">
         <h1 class="intro__subtitle">{{ page.title }}</h1>
         <h2 class="intro__title">{{ site.author}}</h2>
-
+        
     </header>
     <div class="intro__img flex-center">
         
         <img src="assets/images/professor.svg" alt="professor standing in front of a blackboard" class="svg">
-
+        
     </div>
 </section>
-
-
-
 
 
 <!-- Hero -->
@@ -71,7 +69,7 @@ layout: default
 
         <div class="about-me__body flex-center body-width">
             <p>
-                and I have been a full-time maths tutor for over six years and am devoted to teaching. I am passionate about
+                and I have been a full-time maths tutor for over {{ 'now' | date: "%Y" | minus: page.experience }} years and am devoted to teaching. I am passionate about
                 maths and
                 want to pass on my expertise to as many students as possible.
             </p>
@@ -88,7 +86,7 @@ layout: default
                 needs.
             </p>
             <p>
-                And so, for the last six years, I have done that. In this time, I've helped students go from a grade 3 to a
+                And so, for the last {{ 'now' | date: "%Y" | minus: page.experience }} years, I have done that. In this time, I've helped students go from a grade 3 to a
                 grade 7 in
                 their GCSE's. I have helped A-Level students with their STEP and MAT entrance exams to Oxford or Cambridge.
                 And I've
@@ -130,7 +128,7 @@ layout: default
 
         <div class="pro-tutoring__img flex-center">
             <div class="titles">
-                <p class="subtitle">over 8 years of full-time experience</p>
+                <p class="subtitle">over {{ 'now' | date: "%Y" | minus: page.experience }} years of full-time experience</p>
                 <h2 class="title">Professional Tutoring</h2>
             </div>
             <img src="assets/images/teaching.svg" alt="teacher teaching from blackboard" class="svg">
@@ -166,7 +164,7 @@ layout: default
     <section class="grid-parent youtube">
             <div class="youtube__img flex-center">
                 <div class="titles">
-                    <p class="subtitle">Over 3,000 subscribers</p>
+                    <p class="subtitle">Over 3,000 subscribers and 180,000 views</p>
                     <h2 class="title">YouTube channel</h2>
                 </div>
             
@@ -190,7 +188,7 @@ layout: default
                 </p>
 
                 <p>
-                    Have a look through my channel and see how many problems you can solve!
+                    Have a look through <a href="https://www.youtube.com/c/ggmaths" target="_blank" rel="noreferrer noopener">my channel</a> and see how many problems you can solve!
                 </p>
             </div>
 
