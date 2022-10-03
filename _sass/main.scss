@@ -8,6 +8,7 @@ $clr-C: #FFB30B;
 $bodyFont: 'DM Sans', sans-serif;
 $titleFont: 'Poppins', sans-serif;
 
+
 :root {
   --step--2: clamp(0.96rem, 0.87rem + 0.42vw, 1.20rem);
   --step--1: clamp(1.15rem, 1.02rem + 0.60vw, 1.50rem);
@@ -218,7 +219,7 @@ a:hover {
 .youtube__video {
   display: flex;
   width: 100%;
-  min-height: 350px;
+  aspect-ratio: 16 / 9;
 }
 
 // Testimonials Section
