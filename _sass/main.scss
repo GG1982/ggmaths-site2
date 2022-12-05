@@ -52,6 +52,7 @@ body {
 
 section {
   margin-bottom: var(--section-gap);
+  width: 100%;
 }
 
 img {
@@ -147,6 +148,7 @@ a:hover {
 // Introduction Section
 .intro {
   display: grid;
+  max-width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   // min-height: 85vh;
   padding-top: 2em;
@@ -413,7 +415,6 @@ a:hover {
     flex-direction: column; 
     gap: var(--gap-3);
     padding: 1.1rem;
-    width: 100%;
   }
 
   .body-width {
