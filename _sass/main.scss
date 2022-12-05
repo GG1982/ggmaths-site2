@@ -10,14 +10,14 @@ $titleFont: 'Poppins', sans-serif;
 
 
 :root {
-  --step--2: clamp(0.96rem, 0.87rem + 0.42vw, 1.20rem);
-  --step--1: clamp(1.15rem, 1.02rem + 0.60vw, 1.50rem);
-  --step-0: clamp(1.38rem, 1.20rem + 0.85vw, 1.88rem);
-  --step-1: clamp(1.65rem, 1.41rem + 1.18vw, 2.34rem);
-  --step-2: clamp(1.98rem, 1.66rem + 1.62vw, 2.93rem);
-  --step-3: clamp(2.38rem, 1.94rem + 2.19vw, 3.66rem);
-  --step-4: clamp(2.85rem, 2.26rem + 2.94vw, 4.58rem);
-  --step-5: clamp(3.42rem, 2.64rem + 3.92vw, 5.72rem);
+  --step--2: clamp(0.96rem, calc(0.93rem + 0.15vw), 1.04rem);
+  --step--1: clamp(1.15rem, calc(1.09rem + 0.27vw), 1.30rem);
+  --step-0: clamp(1.38rem, calc(1.29rem + 0.43vw), 1.63rem);
+  --step-1: clamp(1.65rem, calc(1.52rem + 0.66vw), 2.03rem);
+  --step-2: clamp(1.98rem, calc(1.79rem + 0.97vw), 2.54rem);
+  --step-3: clamp(2.38rem, calc(2.10rem + 1.39vw), 3.17rem);
+  --step-4: clamp(2.85rem, calc(2.46rem + 1.94vw), 3.97rem);
+  --step-5: clamp(3.42rem, calc(2.89rem + 2.68vw), 4.96rem);
 
 
   --section-gap: 10rem;
@@ -40,6 +40,39 @@ $titleFont: 'Poppins', sans-serif;
 
   --width-gap: min(100% - 2rem, 100em)
 
+}
+
+// Font Size
+.font--2 {
+  font-size: var(--step--2);
+}
+
+.font--1 {
+  font-size: var(--step--1);
+}
+
+.font-0 {
+  font-size: var(--step-0);
+}
+
+.font-1 {
+  font-size: var(--step-1);
+}
+
+.font-2 {
+  font-size: var(--step-2);
+}
+
+.font-3 {
+  font-size: var(--step-3);
+}
+
+.font-4 {
+  font-size: var(--step-4);
+}
+
+.font-5 {
+  font-size: var(--step-5);
 }
 
 
@@ -365,6 +398,8 @@ a:hover {
 
 // Footer Section
 
+
+
 .footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
@@ -374,10 +409,30 @@ a:hover {
   background-size: cover;
 }
 
+.titles {
+  text-align: right;
+}
+
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 3rem;
+  
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem
+}
+.footer-link img {
+  width: 30px;
+}
+
+.footer-links > div {
+  display: flex;
+  gap: 1rem;
 }
 
 .footer-links a {
@@ -390,9 +445,9 @@ a:hover {
 
 
 
-.footer-address span {
-  display: block;
-}
+// .footer-address span {
+//   display: block;
+// }
 
 
 
@@ -489,8 +544,8 @@ a:hover {
     margin-left: 1rem;
   }
 
-  .footer-links a {
-    font-weight: bold;
+  .titles {
+    text-align: left;
   }
 }
 
