@@ -10,5 +10,6 @@ const observer = new ResizeObserver((entries) => {
 )
 
 observer.observe(span)
+console.log("hello world")
 
 
