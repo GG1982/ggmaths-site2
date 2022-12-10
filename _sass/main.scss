@@ -42,6 +42,7 @@ $titleFont: 'Poppins', sans-serif;
   --gap-5: 5rem;
 
   --width-gap: min(100% - 1rem, 100em);
+  --header-width: min(100% - 2rem, 95%, 1200px);
 
   --rotate-text-height: 80px;
 }
@@ -277,7 +278,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: var(--mw);
+  width: var(--header-width);
   margin-inline: auto;
   padding-block: 4em;
   // color: $backgroundColor;
