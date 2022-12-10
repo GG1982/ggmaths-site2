@@ -44,7 +44,7 @@ $titleFont: 'Poppins', sans-serif;
   --width-gap: min(100% - 1rem, 100em);
   --header-width: min(100% - 2rem, 95%, 1200px);
 
-  --rotate-text-height: 80px;
+  // --rotate-text-height: 80px;
 }
 
 // Font Size
@@ -496,32 +496,32 @@ a:hover {
       font-size: var(--step-1);
     }
   .rotate-text > span {
-    font-size: var(--step--2);
+    font-size: var(--step--1);
   }
 }
 
 @keyframes rotate-text {
 
   15% { 
-    transform: translateY(calc(-1 * var(--rotate-text-height)));
+    transform: translateY(-100%);
   }  
   29% {
-    transform: translateY(calc(-2 * var(--rotate-text-height)));
+    transform: translateY(calc(-2 * 100%));
   }
   44% {
-    transform: translateY(calc(-3 * var(--rotate-text-height)));
+    transform: translateY(calc(-3 * 100%));
   }
   59% {
-    transform: translateY(calc(-4 * var(--rotate-text-height)));
+    transform: translateY(calc(-4 * 100%));
   }
   73% {
-    transform: translateY(calc(-5 * var(--rotate-text-height)));
+    transform: translateY(calc(-5 * 100%));
   }
   87% {
-    transform: translateY(calc(-6 * var(--rotate-text-height)));
+    transform: translateY(calc(-6 * 100%));
   }
   100% {
-    transform: translateY(calc(-7 * var(--rotate-text-height)));
+    transform: translateY(calc(-7 * 100%));
   }
 }
 
