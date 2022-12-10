@@ -2,22 +2,118 @@
 layout: default
 ---
 
-
+{% assign experience = 'now' | date: "%Y" | minus: page.experience %}
 
 
 <!-- Introduction -->
-<section class="intro">
-    <header class="intro__head flex-center">
-        <h1 class="intro__subtitle">{{ page.title }}</h1>
-        <h2 class="intro__title">{{ site.author}}</h2>
-        
-    </header>
-    <div class="intro__img flex-center">
-        
-        <img src="assets/images/professor.svg" alt="professor standing in front of a blackboard" class="svg">
-        
+<section class="header-section">
+    <div class="header-container">
+        <header class="header">
+            <h1 class="header-subtitle">{{ page.title }}</h1>
+            <h2 class="header-title"><span class="block">Hi, I'm Giuliano,</span> I help students achieve results they
+                can be proud of.
+            </h2>
+            <br>
+            <h2>I have <span>{{ experience }} years of full-time experience</span> as a private maths tutor</h2>
+            <br>
+            <div class="header-button-container">
+                <a class="button header-button" href="#footer">lets chat</a>
+                <a class="find-out-more" href="#what-i-do">
+                    <p class="font--1">or find out more</p>
+                    <img class="arrow-down" src="assets/images/arrow-down.svg" alt="arrow-down icon">
+                </a>
+            </div>
+        </header>
+        <div class="circle"></div>
+        <img class="triangle" src="assets/images/triangle.svg" alt="">
+        <img class="hexagon" src="assets/images/hexagon.svg" alt="">
+
     </div>
 </section>
+
+<main>
+
+<section id="what-i-do" class="rotate-section">
+    <div class="rotate-container">
+        <div class="flex-row">
+            <h3 class="rotate-title bold">I help students</h3>
+            <div class="rotate-text">
+                <span class="">improve their attitude to learning</span>
+                <span class="">build long-term confidence</span>
+                <span class="">develop successful study habits</span>
+                <span class="">identify & fix weak topics</span>
+                <span class="">understand mistakes are okay</span>
+                <span class="">reach their potential</span>
+                <span class="">overcome learning barriers</span>
+                <span class="">improve their attitude to learning</span>
+            </div>
+        </div>
+        <p class="intro__content font-0">
+            If you're a parent or student looking for an experienced maths tutor to guide you through your
+            studies, then
+            <a href="#footer">send me a message.</a>
+        </p>
+        <img class="pentagon" src="assets/images/pentagon.svg" alt="">
+    </div>
+</section>
+
+<!-- 
+<section class="intro">
+    <div class="intro__container">
+        <header class="intro__head">
+            <h1 class="intro__subtitle">{{ page.title }}</h1>
+            <h2 class="capitalize">Online & in-person lessons</h2>
+            <h2 class="intro__title"><span class="clr-accent block">Hi, I'm Giuliano,</span> I help students achieve results they can be proud of.
+            </h2>
+        </header>
+        
+        <div class="intro__img flex-center">
+            <img src="assets/images/professor.svg" alt="professor standing in front of a blackboard" class="svg">
+        </div>
+    </div>
+</section> -->
+
+
+
+
+
+
+
+<!-- <section class="grid-parent youtube">
+    <div class="youtube__img flex-center">
+        <div class="titles">
+            <p class="subtitle">Over 3,000 subscribers and 180,000 views</p>
+            <h2 class="title">YouTube channel</h2>
+        </div>
+
+        <iframe class="youtube__video" src="https://www.youtube.com/embed/TV7Kc76Ovok">
+        </iframe>
+    </div>
+    <div class="youtube__body flex-center">
+
+        <p>
+            I have posted maths videos training over 3,000 students from around the world to solve maths Olympiad
+            problems.
+        </p>
+
+        <p>
+            These are questions designed to elicit problem-solving techniques found outside of the national curriculum.
+        </p>
+
+        <p>
+            Separately, I also produce personal videos for each of my students explaining any topic they are struggling
+            with. So
+            that they never have to worry about falling behind.
+        </p>
+
+        <p>
+            Have a look through <a href="https://www.youtube.com/c/ggmaths" target="_blank" rel="noreferrer noopener">my
+                channel</a> and see how many problems you can solve!
+        </p>
+    </div>
+</section> -->
+
+
 
 
 <!-- Hero -->
@@ -49,10 +145,7 @@ layout: default
     </div>
 </section>
 
-
 <!-- Main -->
-<main>
-
     <!-- About Me -->
     <section class="grid-parent about-me">
 
@@ -61,15 +154,13 @@ layout: default
                 <p class="subtitle">About me</p>
                 <h2 class="title">Hi 👋, I'm Giuliano...</h2>
             </div>
-
-           
             <img src="assets/images/me.webp" alt="a standing picture of Giuliano Grasso facing the camera, smiling on a bridge, with the river Mersey in the backgorund.">
             
         </div>
 
         <div class="about-me__body flex-center body-width">
             <p>
-                and I have been a full-time maths tutor for over {{ 'now' | date: "%Y" | minus: page.experience }} years and am devoted to teaching. I am passionate about
+                and I have been a full-time maths tutor for over {{ experience }} years and am devoted to teaching. I am passionate about
                 maths and
                 want to pass on my expertise to as many students as possible.
             </p>
@@ -86,7 +177,7 @@ layout: default
                 needs.
             </p>
             <p>
-                And so, for the last {{ 'now' | date: "%Y" | minus: page.experience }} years, I have done that. In this time, I've helped students go from a grade 3 to a
+                And so, for the last {{ experience }} years, I have done that. In this time, I've helped students go from a grade 3 to a
                 grade 7 in
                 their GCSE's. I have helped A-Level students with their STEP and MAT entrance exams to Oxford or Cambridge.
                 And I've
@@ -128,7 +219,7 @@ layout: default
 
         <div class="pro-tutoring__img flex-center">
             <div class="titles">
-                <p class="subtitle">over {{ 'now' | date: "%Y" | minus: page.experience }} years of full-time experience</p>
+                <p class="subtitle">over {{ experience }} years of full-time experience</p>
                 <h2 class="title">Professional Tutoring</h2>
             </div>
             <img src="assets/images/teaching.svg" alt="teacher teaching from blackboard" class="svg">
@@ -159,46 +250,8 @@ layout: default
             </div>
         </div>
     </section>
-
-
-    <section class="grid-parent youtube">
-            <div class="youtube__img flex-center">
-                <div class="titles">
-                    <p class="subtitle">Over 3,000 subscribers and 180,000 views</p>
-                    <h2 class="title">YouTube channel</h2>
-                </div>
-            
-            <iframe class="youtube__video"
-                src="https://www.youtube.com/embed/TV7Kc76Ovok">
-            </iframe>
-            </div>
-            <div class="youtube__body flex-center">
     
-                <p>
-                    I have posted maths videos training over 3,000 students from around the world to solve maths Olympiad problems.
-                </p>
-
-                <p>
-                    These are questions designed to elicit problem-solving techniques found outside of the national curriculum.
-                </p>
-
-                <p>
-                    Separately, I also produce personal videos for each of my students explaining any topic they are struggling with. So
-                    that they never have to worry about falling behind.
-                </p>
-
-                <p>
-                    Have a look through <a href="https://www.youtube.com/c/ggmaths" target="_blank" rel="noreferrer noopener">my channel</a> and see how many problems you can solve!
-                </p>
-            </div>
-
-
-
-
-    </section>
-</main>
-
-
+    
 
 <!-- Testinomials -->
 <section class="testimonials" id="reviews">
@@ -207,7 +260,7 @@ layout: default
         <p class="subtitle">what students & parents have to say</p>
         <h2 class="title">testimonials</h2>
     </div>
-
+    
     <div class="media-scroller snaps-inline">
         
         <div class="media-element">
@@ -219,29 +272,29 @@ layout: default
         <div class="media-element">
             <h2 class="subtitle">Somto - <span>GCSE</span> student</h2>
             <p>After what was a challenging 2 years with multiple lockdowns. I was given the help I needed and achieved a <span>grade 8</span> in my
-            GCSEs. Would heavily recommend.</p>
-            <p class="stars">⭐⭐⭐⭐⭐</p>
-        </div>
-        <div class="media-element">
-            <h2 class="subtitle">Stephanie - <span>A-Level</span> student</h2>
-            <p>I got <span>an A</span> in A Level Maths thanks to Giuliano! He helped me improve my maths skills and exam technique so much. Thank
-            you!!!!</p>
-            <p class="stars">⭐⭐⭐⭐⭐</p>   
-        </div>
-        <div class="media-element">
-            <h2 class="subtitle">V - Mother of <span>GCSE</span> student</h2>
-            <p>Giuliano is great. He has an easy-going manner whilst also keeping the student very focused. My
-            son responded to him very well and has <span>achieved the grade he wanted</span> in GSCE. Considering maths was his least favourite
-            subject he seemed to quite enjoy maths with Giuliano!
-            </p>
-            <p class="stars">⭐⭐⭐⭐⭐</p>
-        </div>
-        <div class="media-element">
-            <h2 class="subtitle">Kyle - <span>GCSE</span> student</h2>
-            <p>Great teaching and easy to understand. Before (Giuliano), I was working at a grade 6 level. But with the help and support,
-            (he) managed to get me working to a <span>grade 8</span>. Thanks for the help!</p>
-            <p class="stars">⭐⭐⭐⭐⭐</p>
-        </div>
+                GCSEs. Would heavily recommend.</p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="media-element">
+                <h2 class="subtitle">Stephanie - <span>A-Level</span> student</h2>
+                <p>I got <span>an A</span> in A Level Maths thanks to Giuliano! He helped me improve my maths skills and exam technique so much. Thank
+                    you!!!!</p>
+                    <p class="stars">⭐⭐⭐⭐⭐</p>   
+                </div>
+                <div class="media-element">
+                    <h2 class="subtitle">V - Mother of <span>GCSE</span> student</h2>
+                    <p>Giuliano is great. He has an easy-going manner whilst also keeping the student very focused. My
+                        son responded to him very well and has <span>achieved the grade he wanted</span> in GSCE. Considering maths was his least favourite
+                        subject he seemed to quite enjoy maths with Giuliano!
+                    </p>
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="media-element">
+                    <h2 class="subtitle">Kyle - <span>GCSE</span> student</h2>
+                    <p>Great teaching and easy to understand. Before (Giuliano), I was working at a grade 6 level. But with the help and support,
+                        (he) managed to get me working to a <span>grade 8</span>. Thanks for the help!</p>
+                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                    </div>
         <div class="media-element">
             <h2 class="subtitle">Karen - Mother of <span>GCSE</span> student</h2>
             <p>My son was delighted with his
@@ -268,70 +321,74 @@ layout: default
         <div class="media-element">
             <h2 class="subtitle">Noorina - <span>A-Level</span> student</h2>
             <p>A knowledgeable and thorough professional tutor. His detailed and informed approach <span>taught me more in a few hours than
-            weeks of class</span>. I recommend him to anyone struggling in a levels or GCSE maths!</p>
-            <p class="stars">⭐⭐⭐⭐⭐</p>
-        </div>
-        <div class="media-element">
-            <h2 class="subtitle">Orli - <span>GCSE</span> student</h2>
-            <p>I just got back my GCSEs and finished with a <span>grade 7 (an A)</span> and I really wouldn't have been able to do it without all
-            his help. Not only is he a brilliant tutor but also kind and amazing individual, caring about his students.</p>
-            <p class="stars">⭐⭐⭐⭐⭐</p>
-        </div>
-        <div class="media-element">
-            <h2 class="subtitle">Bartek - <span>A-Level</span> student</h2>
-            <p>Great lessons and a great tutor that is <span>very passionate for the subject.</span> I learnt a lot but also had an amazing time
-            learning and preparing for my A levels.</p>
-            <p class="stars">⭐⭐⭐⭐⭐</p>
-        </div>
-    </div>
-
-
-
-    <div class="testimonials__btn">
-
-        <a href="https://www.google.com/search?q=gg+maths&rlz=1C1CHNY_enGB764GB764&oq=gg+maths&aqs=chrome..69i57j35i39j0i22i30j69i64l2j69i60j69i61l2.2511j0j7&sourceid=chrome&ie=UTF-8#lrd=0x48761923e87f01e1:0xb59e62c483b997c,1,,,"
-            class="button" target="_blank" rel="noreferrer noopener"> More google Reviews</a>
-    </div>
-
-</section>
-
-
-
-
-<section class="faq grid-parent">
-
-    <div class="faq__body flex-center body-width">
-
-        <div>
-            <div class="faq-question">
-                <p class="faq-question-style">Q</p>
-                <h3>What Is The Price Of A One Hour Private Lesson?</h3>
+                weeks of class</span>. I recommend him to anyone struggling in a levels or GCSE maths!</p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
             </div>
+            <div class="media-element">
+                <h2 class="subtitle">Orli - <span>GCSE</span> student</h2>
+                <p>I just got back my GCSEs and finished with a <span>grade 7 (an A)</span> and I really wouldn't have been able to do it without all
+                    his help. Not only is he a brilliant tutor but also kind and amazing individual, caring about his students.</p>
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="media-element">
+                    <h2 class="subtitle">Bartek - <span>A-Level</span> student</h2>
+                    <p>Great lessons and a great tutor that is <span>very passionate for the subject.</span> I learnt a lot but also had an amazing time
+                        learning and preparing for my A levels.</p>
+                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="testimonials__btn">
+                    
+                    <a href="https://www.google.com/search?q=gg+maths&rlz=1C1CHNY_enGB764GB764&oq=gg+maths&aqs=chrome..69i57j35i39j0i22i30j69i64l2j69i60j69i61l2.2511j0j7&sourceid=chrome&ie=UTF-8#lrd=0x48761923e87f01e1:0xb59e62c483b997c,1,,,"
+                    class="button" target="_blank" rel="noreferrer noopener"> More google Reviews</a>
+                </div>
 
-            <div class="faq-answer">
-                <p class="faq-answer-style">A</p>
+            </section>
+
+            
+            
+
+            <section class="faq grid-parent">
+
+                <div class="faq__body flex-center body-width">
+                    <div class="titles">
+                        <p class="subtitle">fequently asked questions</p>
+                        <h2 class="title">FAQ</h2>
+                    </div>
+                    
+                    <div>
+                        <div class="faq-question">
+                            <p class="faq-question-style">Q</p>
+                            <h3>What Is The Price Of A One Hour Private Lesson?</h3>
+                        </div>
+                        
+                        <div class="faq-answer">
+                            <p class="faq-answer-style">A</p>
                 <p>Lessons in person are £60 per hour and are £50 online.</p>
             </div>
         </div>
-
+        
         <div>
             <div class="faq-question">
                 <p class="faq-question-style">Q</p>
                 <h3>Are You DBS Checked?</h3>
             </div>
-        
+            
             <div class="faq-answer">
                 <p class="faq-answer-style">A</p>
                 <p>Yes, since I work in multiple primary schools, my DBS is consistently updated.</p>
             </div>
         </div>
-
+        
         <div>
             <div class="faq-question">
                 <p class="faq-question-style">Q</p>
                 <h3>Will You Travel To My Home For Lessons?</h3>
             </div>
-        
+            
             <div class="faq-answer">
                 <p class="faq-answer-style">A</p>
                 <p>Yes, provided you do not live too far away, and I have the time.</p>
@@ -343,7 +400,7 @@ layout: default
                 <p class="faq-question-style">Q</p>
                 <h3>I'm An Adult Student. Can You Help Me?</h3>
             </div>
-        
+            
             <div class="faq-answer">
                 <p class="faq-answer-style">A</p>
                 <p>Yes. I've tutored adults who were seeking a qualification or learning maths as a hobby.</p>
@@ -355,29 +412,29 @@ layout: default
                 <p class="faq-question-style">Q</p>
                 <h3>can i add my name to a waiting list?</h3>
             </div>
-        
+            
             <div class="faq-answer">
                 <p class="faq-answer-style">A</p>
                 <p>Yes. I cannot always guarantee availability so I can add your name to a waiting list for when a
-                slot opens.</p>
+                    slot opens.</p>
+                </div>
             </div>
+            
         </div>
-
-    </div>
-
-
-    <div class="faq__img flex-center">
-        <div class="titles">
-            <p class="subtitle">fequently asked questions</p>
-            <h2 class="title">FAQ</h2>
+        
+        
+        <div class="faq__img flex-center">
+            
+            <img src="assets/images/questions.svg" alt="large question mark with two people either side" class="svg">
         </div>
-        <img src="assets/images/questions.svg" alt="large question mark with two people either side" class="svg">
-    </div>
+        
+    </section>
+</main>
+    
+    
+    {% include footer.html %}
 
-</section>
-
-
-{% include footer.html %}
+<script src="../../assets/js/main.js"></script>
 
 
 
