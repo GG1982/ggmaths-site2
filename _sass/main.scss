@@ -118,7 +118,7 @@ body {
 }
 
 body {
-  background-image: radial-gradient(circle, #1d2022, #1d2329, #1d2730, #1e2937, #212c3e, #202f4b, #203258, #233465, #20367b, #223891, #2c37a5, #3c34b9);
+  background-image: radial-gradient(circle, #1d2022, #1d2329, #1d2730, #1e2937, #212c3e, #202f4b, #203258);
   color: $backgroundColor;
 }
 
@@ -173,6 +173,7 @@ a:hover {
 }
 
 .subtitle {
+  color: $clr-B;
   margin-bottom: -0.2rem;
   font-size: var(--step--2);
   text-transform: uppercase;
@@ -237,8 +238,8 @@ a:hover {
   width: 400px;
   // background-color: $bodyColor;
   opacity: 0.3;
-  border-left: 4px solid red;
-  border-bottom: 2px solid red;
+  border-left: 12px solid red;
+  border-bottom: 8px solid red;
   border-radius: 50%;
 }
 
@@ -247,6 +248,7 @@ a:hover {
   width: 450px;
   top: 120px;
   left: -10%;
+  z-index: -1;
   // opacity: 0.4;
   rotate: 20deg;
 }
@@ -257,6 +259,7 @@ a:hover {
   right: -25px;
   width: 400px;
   opacity: 0.6;
+  z-index: -1;
   rotate: 12deg;
 }
 
@@ -288,6 +291,8 @@ a:hover {
 }
 .header-title {
   font-size: var(--step-4);
+  font-family: $titleFont;
+  line-height: 1.3;
 }
 .header-title > span {
   color: #F36A3E;
@@ -296,6 +301,7 @@ a:hover {
 
 .header-subtitle {
   font-size: var(--step-2);
+  font-family: $titleFont;
 }
 
 @media (max-width: 550px) {
@@ -446,11 +452,12 @@ a:hover {
 .rotate-container > div {
   align-items: center;
   flex-wrap: wrap;
-  gap: 1em;
+  column-gap: 1em;
 }
 
 .rotate-title {
   font-size: var(--step-5);
+  font-family: $titleFont;
 }
 
 
@@ -459,13 +466,16 @@ a:hover {
   height: var(--rotate-text-height);
   font-size: var(--step-3);
   overflow: hidden;
+  width: max-content;
+  width: Min(100%, 900px)
 }
 
 .rotate-text > span {
   display: flex;
   color: #F36A3E;
   font-weight: bold;
-  height: fit-content;
+  width: max-content;
+  height: var(--rotate-text-height);
 
   animation: rotate-text cubic-bezier(0.64, -0.41, 0, 1.04) 14s infinite;
 }
@@ -479,6 +489,7 @@ a:hover {
   top: 180px;
   right: 140px;
   opacity: 0.2;
+  z-index: -1;
   rotate: 22deg;
   max-width: 400px;
 }
@@ -496,7 +507,7 @@ a:hover {
       font-size: var(--step-1);
     }
   .rotate-text > span {
-    font-size: var(--step--1);
+    // font-size: var(--step--1);
   }
 }
 
