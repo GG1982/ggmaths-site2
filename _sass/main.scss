@@ -44,7 +44,7 @@ $titleFont: 'Poppins', sans-serif;
   --width-gap: min(100% - 1rem, 100em);
   --header-width: min(100% - 2rem, 95%, 1200px);
 
-  // --rotate-text-height: 80px;
+  // --rotate-text-height: 70px;
 }
 
 // Font Size
@@ -373,10 +373,10 @@ a:hover {
 .arrow-down {
   height: 40px;
   border-radius: 40px;
+
   outline: 3px solid orange;
   outline-offset: 15px;
   animation: move-up-down 3s infinite;
-  //   background-color: red;
 }
 
 @keyframes move-up-down {
@@ -390,44 +390,6 @@ a:hover {
     transform: translateY(-5px);
   }
 }
-
-// .intro__container {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-//   min-height: 85vh;
-//   padding-top: 2em;
-//   // background-image: url(../../assets/images/header-wave.svg);
-//   // background-repeat: no-repeat;
-//   // background-size: cover;
-//   // margin-bottom: 0rem;
-// }
-
-
-// .intro__head {
-//   // text-align: center;
-//   padding-left: 0.15rem;
-//   padding-right: 0.15rem;
-//   line-height: 1.5;
-//   gap: 5px;
-// }
-
-
-// .intro__title {
-//   font-size: var(--step-3);
-//   display: block;
-//   font-family: $titleFont;
-// }
-
-
-// .intro__subtitle {
-//   font-size: var(--step-0);
-//   display: block;
-//   font-family: $titleFont;
-// }
-
-
-
-
 
 .rotate-section {
   display: grid;
@@ -449,7 +411,7 @@ a:hover {
   gap: 2em;
 }
 
-.rotate-container > div {
+.rotate-container>div {
   align-items: center;
   flex-wrap: wrap;
   column-gap: 1em;
@@ -461,7 +423,7 @@ a:hover {
 }
 
 
-.rotate-text  {
+.rotate-text {
   // display: block;
   height: var(--rotate-text-height);
   font-size: var(--step-3);
@@ -475,7 +437,6 @@ a:hover {
   color: #F36A3E;
   font-weight: bold;
   width: max-content;
-  height: var(--rotate-text-height);
 
   animation: rotate-text cubic-bezier(0.64, -0.41, 0, 1.04) 14s infinite;
 }
@@ -495,42 +456,51 @@ a:hover {
 }
 
 @media (max-width: 700px) {
-.rotate-title {
+  .rotate-title {
     font-size: var(--step-3);
   }
-  .rotate-text > span {
+
+  .rotate-text>span {
     font-size: var(--step-0);
   }
 }
+
 @media (max-width: 400px) {
   .rotate-title {
-      font-size: var(--step-1);
-    }
+    font-size: var(--step-1);
+  }
+
   .rotate-text > span {
-    // font-size: var(--step--1);
+    font-size: var(--step--1);
   }
 }
 
 @keyframes rotate-text {
 
-  15% { 
+  15% {
     transform: translateY(-100%);
-  }  
+  }
+
   29% {
     transform: translateY(calc(-2 * 100%));
   }
+
   44% {
     transform: translateY(calc(-3 * 100%));
   }
+
   59% {
     transform: translateY(calc(-4 * 100%));
   }
+
   73% {
     transform: translateY(calc(-5 * 100%));
   }
+
   87% {
     transform: translateY(calc(-6 * 100%));
   }
+
   100% {
     transform: translateY(calc(-7 * 100%));
   }
